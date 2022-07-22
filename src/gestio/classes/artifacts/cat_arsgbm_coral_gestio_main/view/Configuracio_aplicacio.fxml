@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="apConfiguracio" prefHeight="400.0" prefWidth="600.0" styleClass="anchorpantalla" stylesheets="@../style/styles.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cat.arsgbm.coral.controllers.ConfiguracioAplicacioController">
+   <children>
+      <TextField fx:id="tfMailResp" layoutX="205.0" layoutY="57.0" prefHeight="26.0" prefWidth="358.0" />
+      <TextField fx:id="tfCorreuRecepcio1" layoutX="200.0" layoutY="151.0" prefHeight="26.0" prefWidth="365.0">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets></TextField>
+      <TextField fx:id="tfCorreuRecepcio2" layoutX="200.0" layoutY="187.0" prefHeight="26.0" prefWidth="365.0" />
+      <TextField fx:id="tfDirectoriArrelDocs" editable="false" layoutX="217.0" layoutY="98.0" prefHeight="26.0" prefWidth="316.0" />
+      <Button fx:id="btGuardar" layoutX="499.0" layoutY="349.0" mnemonicParsing="false" onAction="#btGuardarOnAction" prefHeight="26.0" prefWidth="87.0" text="Guardar" />
+      <Label layoutX="48.0" layoutY="156.0" prefHeight="16.0" prefWidth="157.0" text="Correu Recepcio 1:">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Label>
+      <Label layoutX="48.0" layoutY="192.0" text="Correu Recepcio 2:">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Label>
+      <Label layoutX="18.0" layoutY="103.0" prefHeight="16.0" prefWidth="199.0" text="Directori arrel documents:">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Label>
+      <Label layoutX="47.0" layoutY="62.0" text="Correu responsable:">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Label>
+      <TextArea fx:id="taMissatgeAvis" layoutX="59.0" layoutY="256.0" prefHeight="129.0" prefWidth="417.0" />
+      <Label layoutX="222.0" layoutY="25.0" prefHeight="25.0" prefWidth="157.0" text="CONFIGURACIO">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="66.0" layoutY="230.0" text="Missatge:">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Label>
+      <Button layoutX="534.0" layoutY="98.0" mnemonicParsing="false" onAction="#cercador" text="..." />
+   </children>
+</AnchorPane>

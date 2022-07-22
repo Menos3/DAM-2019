@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@../style/styles.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cat.arsgbm.coral.controllers.AltaXofersController">
+    <children>
+        <Label fx:id="lbTitular" alignment="CENTER" layoutX="150.0" layoutY="14.0" prefHeight="26.0" prefWidth="300.0" text="ALTA XOFERS" textAlignment="JUSTIFY" wrapText="true">
+            <font>
+                <Font size="22.0" />
+            </font>
+        </Label>
+        <Label layoutX="24.0" layoutY="62.0" prefHeight="16.0" prefWidth="144.0" styleClass="label-obligatoria" text="Transportista *" />
+        <Label layoutX="25.0" layoutY="93.0" styleClass="label-obligatoria" text="Nom *" />
+        <Label layoutX="21.0" layoutY="159.0" text="Número Xofer " />
+        <Label layoutX="25.0" layoutY="192.0" text="Telefon" />
+        <Label layoutX="22.0" layoutY="225.0" text="Correu Electrònic" />
+        <Label layoutX="22.0" layoutY="260.0" text="Carnet de Conduir" />
+        <Label layoutX="16.0" layoutY="291.0" prefHeight="17.0" prefWidth="160.0" text="Carnet mercaderies perilloses" />
+        <Label layoutX="18.0" layoutY="324.0" prefHeight="16.0" prefWidth="129.0" text="Carnet Carreter" />
+        <TextField fx:id="tfNom" layoutX="201.0" layoutY="88.0" prefHeight="26.0" prefWidth="182.0" styleClass="text-field" />
+        <TextField fx:id="tfCognom" layoutX="201.0" layoutY="122.0" prefHeight="26.0" prefWidth="182.0" styleClass="text-field" />
+        <TextField fx:id="tfNumIntern" layoutX="201.0" layoutY="154.0" prefHeight="26.0" prefWidth="182.0" styleClass="text-field" />
+        <TextField fx:id="tfTelefon" layoutX="201.0" layoutY="187.0" prefHeight="26.0" prefWidth="182.0" styleClass="text-field" />
+        <TextField fx:id="tfCorreuXofer" layoutX="202.0" layoutY="220.0" prefHeight="26.0" prefWidth="182.0" styleClass="text-field" />
+        <DatePicker fx:id="dpCarnetConduir" layoutX="202.0" layoutY="255.0" prefHeight="26.0" prefWidth="210.0" />
+        <DatePicker fx:id="dpCarnetADR" layoutX="203.0" layoutY="287.0" prefHeight="26.0" prefWidth="210.0" />
+        <DatePicker fx:id="dpCarnetCarreter" layoutX="203.0" layoutY="319.0" prefHeight="26.0" prefWidth="210.0" />
+        <CheckBox fx:id="cbEmprempta" layoutX="203.0" layoutY="367.0" mnemonicParsing="false" text="Emprempta" />
+        <CheckBox fx:id="cbActiva_Baixa_Temporal" layoutX="445.0" layoutY="61.0" mnemonicParsing="false" text="Baixa Temporal" />
+        <Button fx:id="btDonaralta" layoutX="476.0" layoutY="350.0" mnemonicParsing="false" onAction="#btDonaraltaOnAction" text="Donar d'alta" />
+        <Button id="button-doc-pujar" fx:id="btGuardarCarnetXofer" layoutX="419.0" layoutY="255.0" mnemonicParsing="false" onAction="#btGuardarCarnetXoferOnAction" prefHeight="26.0" prefWidth="26.0" styleClass="button-doc-pujar" stylesheets="@../style/styles.css" />
+        <Button id="button-doc-pujar" fx:id="btGuardarCarnetADR" layoutX="420.0" layoutY="287.0" mnemonicParsing="false" onAction="#btGuardarCarnetADROnAction" prefHeight="9.0" prefWidth="26.0" styleClass="button-doc-pujar" stylesheets="@../style/styles.css" />
+        <Button id="button-doc-pujar" fx:id="btGuardarCarnetCarreter" layoutX="420.0" layoutY="319.0" mnemonicParsing="false" onAction="#btGuardarCarnetCarreterOnAction" prefHeight="1.0" prefWidth="26.0" styleClass="button-doc-pujar" stylesheets="@../style/styles.css" />
+        <Label layoutX="22.0" layoutY="127.0" styleClass="label-obligatoria" text="Cognom *" />
+        <ComboBox fx:id="cmbTransportista" layoutX="201.0" layoutY="57.0" prefWidth="150.0" />
+    </children>
+   <styleClass>
+      <String fx:value="anchorpantalla" />
+      <String fx:value="stage" />
+   </styleClass>
+
+</AnchorPane>

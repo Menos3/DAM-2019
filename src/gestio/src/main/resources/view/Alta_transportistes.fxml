@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import dam2.controls.limitedtextfield.LimitedTextField?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@../style/styles.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cat.arsgbm.coral.controllers.AltaTransportistesController">
+<children>
+   <Label fx:id="lbTitular" alignment="CENTER" layoutX="150.0" layoutY="14.0" prefHeight="26.0" prefWidth="300.0" text="ALTA DE TRANSPORTISTES" textAlignment="JUSTIFY" wrapText="true">
+      <font>
+         <Font size="22.0" />
+      </font>
+   </Label>
+   <Label layoutX="9.0" layoutY="62.0" prefHeight="16.0" prefWidth="164.0" styleClass="label-obligatoria" text="Rao social/Autonom *" />
+   <Label layoutX="8.0" layoutY="92.0" styleClass="label-obligatoria" text="CIF/NIF *" />
+   <Label layoutX="8.0" layoutY="119.0" styleClass="label-obligatoria" text="Correu Electronic *" />
+   <Label layoutX="7.0" layoutY="151.0" text="Telefon" />
+   <Label layoutX="7.0" layoutY="184.0" text="Certificat d'Hisenda" />
+   <Label layoutX="6.0" layoutY="215.0" text="Certificat P.R.L" />
+   <Label layoutX="8.0" layoutY="249.0" text="Assegurança de mercaderies" />
+   <Label layoutX="7.0" layoutY="277.0" prefHeight="16.0" prefWidth="129.0" text="Assegurança RC" />
+   <TextField fx:id="tfRaosocial" layoutX="215.0" layoutY="57.0" styleClass="text-field" />
+   <LimitedTextField fx:id="tfCIFNIF" layoutX="215.0" layoutY="87.0" maxLength="9" styleClass="text-field" />
+   <TextField fx:id="tfCorreuTransp" layoutX="215.0" layoutY="114.0" styleClass="text-field" />
+   <TextField fx:id="tfTelefon" layoutX="215.0" layoutY="146.0" styleClass="text-field" />
+   <CheckBox fx:id="cbTrade" layoutX="31.0" layoutY="323.0" mnemonicParsing="false" text="TRADE" />
+   <DatePicker fx:id="dpCertificathisenda" layoutX="215.0" layoutY="179.0" />
+   <DatePicker fx:id="dpCertificatprl" layoutX="215.0" layoutY="210.0" />
+   <DatePicker fx:id="dpAssegurancamerc" layoutX="215.0" layoutY="244.0" />
+   <DatePicker fx:id="dpAssegurancarc" layoutX="215.0" layoutY="277.0" />
+   <Button fx:id="btDonaralta" layoutX="476.0" layoutY="350.0" mnemonicParsing="false" onAction="#btDonaraltaOnAction" text="Donar d'alta" />
+   <Button id="button-doc-pujar" fx:id="btGuardarCH" layoutX="419.0" layoutY="179.0" mnemonicParsing="false" onAction="#btGuardarCHOnAction" prefHeight="26.0" prefWidth="26.0" styleClass="button-doc-pujar" />
+   <Button id="button-doc-pujar" fx:id="btGuardarCPRL" layoutX="419.0" layoutY="210.0" mnemonicParsing="false" onAction="#btGuardarCPRLOnAction" prefHeight="26.0" prefWidth="26.0" styleClass="button-doc-pujar" />
+   <Button id="button-doc-pujar" fx:id="btGuardarAM" layoutX="419.0" layoutY="244.0" mnemonicParsing="false" onAction="#btGuardarAMOnAction" prefHeight="9.0" prefWidth="26.0" styleClass="button-doc-pujar" />
+   <Button id="button-doc-pujar" fx:id="btGuardarARC" layoutX="419.0" layoutY="280.0" mnemonicParsing="false" onAction="#btGuardarARCOnAction" prefHeight="1.0" prefWidth="26.0" styleClass="button-doc-pujar" />
+   <CheckBox fx:id="cbActiva_Baixa_Temporal" layoutX="215.0" layoutY="341.0" mnemonicParsing="false" text="Baixa Temporal Activa" />
+      <Button id="button-doc-pujar" fx:id="btExisteixCH" layoutX="463.0" layoutY="179.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="26.0">
+         <styleClass>
+            <String fx:value="navigation-button-image-not" />
+            <String fx:value="navigation-button-image-yes" />
+         </styleClass>
+      </Button>
+      <Button id="button-doc-pujar" fx:id="btExisteixCPRL" layoutX="463.0" layoutY="210.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="26.0">
+         <styleClass>
+            <String fx:value="navigation-button-image-not" />
+            <String fx:value="navigation-button-image-yes" />
+         </styleClass>
+      </Button>
+      <Button id="button-doc-pujar" fx:id="btExisteixAM" layoutX="463.0" layoutY="244.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="26.0">
+         <styleClass>
+            <String fx:value="navigation-button-image-not" />
+            <String fx:value="navigation-button-image-yes" />
+         </styleClass>
+      </Button>
+      <Button id="button-doc-pujar" fx:id="btExisteixARC" layoutX="463.0" layoutY="280.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="26.0">
+         <styleClass>
+            <String fx:value="navigation-button-image-not" />
+            <String fx:value="navigation-button-image-yes" />
+         </styleClass>
+      </Button>
+</children>
+   <styleClass>
+      <String fx:value="anchorpantalla" />
+      <String fx:value="stage" />
+   </styleClass>
+</AnchorPane>

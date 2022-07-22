@@ -1,0 +1,48 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="cat.arsgbm.coral.gestio.main">
+    <output-path>$PROJECT_DIR$/classes/artifacts/cat_arsgbm_coral_gestio_main</output-path>
+    <properties id="javafx-properties">
+      <options>
+        <option name="appClass" value="cat.arsgbm.coral.Main" />
+        <option name="description" value="" />
+        <option name="htmlPlaceholderId" value="" />
+        <option name="title" value="gestio_main" />
+        <option name="vendor" value="ARSGBM.java" />
+        <option name="version" value="1.5" />
+      </options>
+    </properties>
+    <root id="root">
+      <element id="archive" name="cat_arsgbm_coral_gestio_main.jar">
+        <element id="module-output" name="cat.arsgbm.coral.gestio.main" />
+      </element>
+      <element id="jpa-descriptors" facet="cat.arsgbm.coral.gestio.main/jpa/JPA" />
+      <element id="library" level="project" name="Gradle: antlr:antlr:2.7.7" />
+      <element id="library" level="project" name="Gradle: com.fasterxml:classmate:1.3.4" />
+      <element id="library" level="project" name="Gradle: com.sun.istack:istack-commons-runtime:3.0.7" />
+      <element id="library" level="project" name="Gradle: com.sun.xml.fastinfoset:FastInfoset:1.2.15" />
+      <element id="library" level="project" name="Gradle: commons-codec:commons-codec:1.10" />
+      <element id="library" level="project" name="Gradle: commons-configuration:commons-configuration:1.10" />
+      <element id="library" level="project" name="Gradle: commons-lang:commons-lang:2.6" />
+      <element id="library" level="project" name="Gradle: commons-logging:commons-logging:1.1.1" />
+      <element id="library" level="project" name="Gradle: javax.activation:javax.activation-api:1.2.0" />
+      <element id="library" level="project" name="Gradle: javax.persistence:javax.persistence-api:2.2" />
+      <element id="library" level="project" name="Gradle: javax.xml.bind:jaxb-api:2.3.1" />
+      <element id="library" level="project" name="Gradle: net.bytebuddy:byte-buddy:1.9.5" />
+      <element id="library" level="project" name="Gradle: org.dom4j:dom4j:2.1.1" />
+      <element id="library" level="project" name="Gradle: org.glassfish.jaxb:jaxb-runtime:2.3.1" />
+      <element id="library" level="project" name="Gradle: org.glassfish.jaxb:txw2:2.3.1" />
+      <element id="library" level="project" name="Gradle: org.hibernate.common:hibernate-commons-annotations:5.1.0.Final" />
+      <element id="library" level="project" name="Gradle: org.hibernate:hibernate-core:5.4.1.Final" />
+      <element id="library" level="project" name="Gradle: org.jasypt:jasypt:1.9.2" />
+      <element id="library" level="project" name="Gradle: org.javassist:javassist:3.24.0-GA" />
+      <element id="library" level="project" name="Gradle: org.jboss.logging:jboss-logging:3.3.2.Final" />
+      <element id="library" level="project" name="Gradle: org.jboss.spec.javax.transaction:jboss-transaction-api_1.2_spec:1.1.1.Final" />
+      <element id="library" level="project" name="Gradle: org.jboss:jandex:2.0.5.Final" />
+      <element id="library" level="project" name="Gradle: org.jvnet.staxex:stax-ex:1.8" />
+      <element id="library" level="project" name="Gradle: org.mariadb.jdbc:mariadb-java-client:2.3.0" />
+      <element id="library" level="project" name="Gradle: junit:junit:4.12" />
+      <element id="library" level="project" name="Gradle: org.hamcrest:hamcrest-core:1.3" />
+      <element id="dir-copy" path="$PROJECT_DIR$/src/main/resources" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,50 @@
+.stage{
+
+    -fx-border-color: red;
+    -fx-border-width: 2;
+}
+.donaColor{
+    -fx-background-color: cyan;
+}
+
+.anchorpantalla {
+
+    -fx-background-color: skyblue;
+}
+
+.barramenu {
+    -fx-background-color: #d7f1f7;
+}
+
+.tvcerca{
+    -fx-background-color: red;
+}
+
+.btGuardarCH {
+    -fx-background-image: url('pujar-arxiu.png');
+}
+
+.btGuardarCPRL {
+    -fx-background-image: url('pujar-arxiu.png');
+}
+
+.btGuardarAM {
+    -fx-background-image: url('pujar-arxiu.png');
+}
+
+.btGuardarARC {
+    -fx-background-image: url('pujar-arxiu.png');
+}
+
+.btGuardarCarnetConduir{
+    -fx-background-image: url('pujar-arxiu.png');
+}
+
+.btGuardarCarnetADR{
+    -fx-background-image: url('pujar-arxiu.png');
+}
+
+.btGuardarCarnetCarreter{
+    -fx-background-image: url('pujar-arxiu.png');
+}
+

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import dam2.controls.limitedtextfield.LimitedTextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="apCerca_transportistes" prefHeight="444.0" prefWidth="813.0" styleClass="anchorpantalla" stylesheets="@../style/styles.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cat.arsgbm.coral.controllers.CercaTransportistesController">
+   <children>
+      <Label layoutX="41.0" layoutY="37.0" prefHeight="37.0" prefWidth="243.0" text="Cercar transportista per nom o CIF/NIF" />
+      <LimitedTextField fx:id="tfNomCIF" layoutX="284.0" layoutY="43.0" maxLength="9" prefHeight="25.0" prefWidth="284.0" />
+      <TableView id="tvCerca_transportistes" fx:id="tvTransportistes" layoutX="8.0" layoutY="90.0" prefHeight="265.0" prefWidth="797.0" styleClass="tvcerca" stylesheets="@../style/styles.css">
+        <columns>
+          <TableColumn fx:id="colRaosocial" maxWidth="1.7976931348623157E308" prefWidth="128.0" text="Raó social" />
+          <TableColumn fx:id="colCIFNIF" prefWidth="72.0" text="CIF/NIF" />
+            <TableColumn fx:id="colCorreuTransp" prefWidth="134.0" text="Email" />
+            <TableColumn fx:id="colTelefon" prefWidth="72.0" text="Telèfon" />
+            <TableColumn fx:id="colCertificathisenda" prefWidth="83.0" text="Cert. Hisenda" />
+            <TableColumn fx:id="colCertificatprl" prefWidth="66.0" text="Cert.P.R.L." />
+            <TableColumn fx:id="colAssegurancamerc" prefWidth="102.0" text="Asseg Mercaderies" />
+            <TableColumn fx:id="colAssegurancarc" minWidth="0.0" prefWidth="93.0" text="Asseg R.C." />
+            <TableColumn fx:id="colBaixaTemporal" prefWidth="42.0" text="check" />
+        </columns>
+      </TableView>
+      <ImageView fitHeight="37.0" fitWidth="49.0" layoutX="605.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Lupa.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btModifica" layoutX="697.0" layoutY="43.0" mnemonicParsing="false" onAction="#btModificaOnAction" text="Modifica" />
+      <Button fx:id="btBaixaFisica" layoutX="697.0" layoutY="383.0" mnemonicParsing="false" onAction="#btBaixaFisicaOnAction" text="Baixa Fisica" />
+      <Button fx:id="btBaixaTemporal" layoutX="545.0" layoutY="383.0" mnemonicParsing="false" onAction="#btBaixaTemporalOnAction" text="Baixa Temporal" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import dam2.controls.limitedtextfield.LimitedTextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="821.0" styleClass="anchorpantalla" stylesheets="@../style/styles.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cat.arsgbm.coral.controllers.CercaXofersController">
+    <children>
+        <Label layoutX="41.0" layoutY="37.0" prefHeight="37.0" prefWidth="243.0" text="Cercar transportista per nom o CIF/NIF" />
+        <LimitedTextField fx:id="tfNomCIF" layoutX="284.0" layoutY="43.0" maxLength="9" prefHeight="25.0" prefWidth="284.0" />
+        <TableView id="tvCerca_transportistes" fx:id="tvTransportistes" layoutX="8.0" layoutY="90.0" prefHeight="265.0" prefWidth="797.0" styleClass="tvcerca" stylesheets="@../style/styles.css">
+            <columns>
+                <TableColumn fx:id="colTransportista" maxWidth="1.7976931348623157E308" prefWidth="89.0" text="Transportista" />
+            <TableColumn fx:id="colCognom" prefWidth="124.0" text="Cognoms" />
+                <TableColumn fx:id="colNom" prefWidth="89.0" text=" Nom" />
+                <TableColumn fx:id="colCorreuTransp" prefWidth="95.0" text="Num Xofer" />
+                <TableColumn fx:id="colTelefon" prefWidth="72.0" text="Telèfon" />
+                <TableColumn fx:id="colCertificathisenda" prefWidth="73.0" text="E Digital" />
+                <TableColumn fx:id="colCertificatprl" prefWidth="63.0" text="Carnet Conduir" />
+                <TableColumn fx:id="colAssegurancamerc" prefWidth="82.0" text="Merc Perilloses" />
+                <TableColumn fx:id="colAssegurancarc" prefWidth="133.0" text="Carnet Carreter" />
+            <TableColumn fx:id="colAssegurancarc1" prefWidth="149.0" text="E Digital" />
+            </columns>
+        </TableView>
+        <ImageView fitHeight="37.0" fitWidth="49.0" layoutX="605.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../img/Lupa.png" />
+            </image>
+        </ImageView>
+        <Button fx:id="btModifica" layoutX="697.0" layoutY="43.0" mnemonicParsing="false" onAction="#btModificaXoferOnAction" text="Modifica" />
+        <Button fx:id="btBaixaFisica" layoutX="691.0" layoutY="371.0" mnemonicParsing="false" onAction="#btBaixaFisicaXoferOnAction" text="Baixa Fisica" />
+        <Button fx:id="btBaixaTemporal" layoutX="545.0" layoutY="371.0" mnemonicParsing="false" onAction="#btBaixaTemporalXoferOnAction" text="Baixa Temporal" />
+    </children>
+
+
+</AnchorPane>

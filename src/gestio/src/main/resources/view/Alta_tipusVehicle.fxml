@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="321.0" prefWidth="554.0" stylesheets="@../style/styles.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cat.arsgbm.coral.controllers.AltaTipusVehicleController">
+   <children>
+      <Label fx:id="lbTitular" alignment="CENTER" layoutX="128.0" layoutY="23.0" prefHeight="26.0" prefWidth="331.0" text="ALTA DE TIPUS DE VEHICLES" textAlignment="JUSTIFY" wrapText="true">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="111.0" layoutY="137.0" styleClass="label-obligatoria" text="Nom del vehicle" />
+      <TextField fx:id="tfNomVehicle" layoutX="245.0" layoutY="132.0" styleClass="text-field" />
+      <Button fx:id="btDonarAlta" layoutX="441.0" layoutY="281.0" mnemonicParsing="false" onAction="#btDonarAltaOnAction" text="Donar d'alta" />
+   </children>
+   <styleClass>
+      <String fx:value="anchorpantalla" />
+      <String fx:value="stage" />
+   </styleClass>
+</AnchorPane>

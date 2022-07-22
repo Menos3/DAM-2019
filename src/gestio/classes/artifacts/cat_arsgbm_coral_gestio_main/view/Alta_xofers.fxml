@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="anchorpantalla" stylesheets="@../style/styles.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cat.arsgbm.coral.controllers.AltaXofersController">
+    <children>
+        <Label fx:id="lbTitular" alignment="CENTER" layoutX="150.0" layoutY="14.0" prefHeight="26.0" prefWidth="300.0" text="ALTA XOFERS" textAlignment="JUSTIFY" wrapText="true">
+            <font>
+                <Font size="22.0" />
+            </font>
+        </Label>
+        <Label layoutX="16.0" layoutY="62.0" prefHeight="16.0" prefWidth="144.0" text="Transportista *" />
+        <Label layoutX="25.0" layoutY="93.0" text="Nom *" />
+        <Label layoutX="21.0" layoutY="159.0" text="Número Xofer " />
+        <Label layoutX="25.0" layoutY="192.0" text="Telefon" />
+        <Label layoutX="22.0" layoutY="225.0" text="Correu Electrònic" />
+        <Label layoutX="22.0" layoutY="260.0" text="Carnet de Conduir" />
+        <Label layoutX="16.0" layoutY="291.0" prefHeight="17.0" prefWidth="160.0" text="Carnet mercaderies perilloses" />
+        <Label layoutX="18.0" layoutY="324.0" prefHeight="16.0" prefWidth="129.0" text="Carnet Carreter" />
+        <TextField fx:id="tfNumIntern" layoutX="201.0" layoutY="154.0" prefHeight="26.0" prefWidth="182.0" />
+        <TextField fx:id="tfTelefon" layoutX="201.0" layoutY="187.0" prefHeight="26.0" prefWidth="182.0" />
+        <DatePicker fx:id="dpCarnetConduir" layoutX="202.0" layoutY="255.0" prefHeight="26.0" prefWidth="210.0" />
+        <DatePicker fx:id="dpCarnetADR" layoutX="203.0" layoutY="287.0" prefHeight="26.0" prefWidth="210.0" />
+        <DatePicker fx:id="dpCarnetCarreter" layoutX="203.0" layoutY="319.0" prefHeight="26.0" prefWidth="210.0" />
+        <Button fx:id="btDonaralta" layoutX="476.0" layoutY="350.0" mnemonicParsing="false" onAction="#btXoferAltaOnAction" text="Donar d'alta" />
+        <Button fx:id="btGuardarCarnetXofer" layoutX="419.0" layoutY="255.0" mnemonicParsing="false" onAction="#btGuardarCarnetXoferOnAction" prefHeight="26.0" prefWidth="26.0" styleClass="btGuardarCarnetConduir" stylesheets="@../style/styles.css" />
+        <Button fx:id="btGuardarCarnetADR" layoutX="420.0" layoutY="287.0" mnemonicParsing="false" onAction="#btGuardarCarnetADROnAction" prefHeight="9.0" prefWidth="26.0" styleClass="btGuardarCarnetADR" />
+        <Button fx:id="btGuardarCarnetCarreter" layoutX="420.0" layoutY="319.0" mnemonicParsing="false" onAction="#btGuardarCarnetCarreterOnAction" prefHeight="1.0" prefWidth="26.0" styleClass="btGuardarCarnetCarreter" />
+        <CheckBox fx:id="cbActiva_Baixa_Temporal" layoutX="231.0" layoutY="354.0" mnemonicParsing="false" text="Baixa Temporal Activa" />
+      <TextField fx:id="tfCorreuXofer" layoutX="202.0" layoutY="220.0" prefHeight="26.0" prefWidth="182.0" />
+      <CheckBox fx:id="cbEmprempta" layoutX="49.0" layoutY="354.0" mnemonicParsing="false" text="Emprempta" />
+      <Label layoutX="22.0" layoutY="127.0" text="Cognom *" />
+      <TextField fx:id="tfNom" layoutX="201.0" layoutY="88.0" prefHeight="26.0" prefWidth="182.0" />
+      <TextField fx:id="tfCognom" layoutX="202.0" layoutY="122.0" prefHeight="26.0" prefWidth="182.0" />
+      <ComboBox fx:id="cmbTransportista" layoutX="201.0" layoutY="57.0" prefWidth="150.0" />
+    </children>
+
+</AnchorPane>
